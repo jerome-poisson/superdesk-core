@@ -51,6 +51,11 @@ class UsersResource(Resource):
                 'type': 'email',
                 'required': True
             },
+            'jid': {
+                'unique': True,
+                'type': 'string',
+                'required': False,
+            },
             'phone': {
                 'type': 'string',
                 'nullable': True
